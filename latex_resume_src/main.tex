@@ -1,0 +1,324 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc} % указывает latex, где русский шрифт
+\usepackage[russian]{babel} % установить русский шрифт
+\usepackage{graphicx} % для загрузки своих картинок в качестве иконок
+\usepackage{hyperref}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.4\textwidth} 
+	\fontsize{15}{20} \textcolor{black}{\textbf{{Ширяев Антон Дмитриевич}}} % First name
+	
+	\vspace{6pt}
+	
+	\Large Deep Learning Engineer (CV, LLM \& VLM) % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.25\textwidth} % 20% of the page width for the first row of icons	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+
+    % City
+    \includegraphics[height=10pt, width=10pt]{icons/geo_icon.png}
+    {Владивосток (GMT +10)}
+    
+    % Date of Birth
+    \includegraphics[height=10pt, width=10pt]{icons/calendar_icon.png}
+    {22.03.1990}
+
+    % Phone
+    \includegraphics[height=10pt, width=10pt]{icons/phone_icon.png}
+    {8 914 971 10 73}
+
+    % email
+    \includegraphics[height=10pt, width=10pt]{icons/email_icon.png}{\href{mailto:med-phisiker@yandex.ru}{{\textcolor{blue}{med-phisiker@yandex.ru}}}
+
+    % telegram
+    \includegraphics[height=10pt, width=10pt]{icons/telegram_icon.png}{\href{https://t.me/med_phisiker}{\textcolor{blue}{@med\_phisiker}}}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth} % 27% of the page width for the second row of icons
+     % email
+
+    % GitHub
+    \includegraphics[height=10pt, width=10pt]{icons/github_icon.png}{\href{https://github.com/medphisiker}{\textcolor{blue}{https://github.com/medphisiker}}}
+
+    % GitLab
+    \includegraphics[height=10pt, width=10pt]{icons/gitlab_icon.png}{\href{https://gitlab.com/users/med.phisiker/groups}{\textcolor{blue}{https://gitlab.com/users/med.phisiker}}}
+
+    % Kaggle
+    \includegraphics[height=10pt, width=10pt]{icons/kaggle_icon.png}{\href{https://www.kaggle.com/medphisiker}{\textcolor{blue}{https://www.kaggle.com/medphisiker}}}
+
+    % Medium
+    \includegraphics[height=10pt, width=10pt]{icons/medium_icon.png}{\href{https://medium.com/@med.phisiker}{\textcolor{blue}{https://medium.com/@med.phisiker}}}
+
+    % LeetCode
+    \includegraphics[height=10pt, width=10pt]{icons/leetcode_icon.jpg}{\href{https://leetcode.com/u/med_phisiker/}{\textcolor{blue}{https://leetcode.com/u/med\_phisiker/}}}
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{\textwidth}
+    \cvsect{О себе}
+	\vspace{-6pt}
+ 
+    %Ваш текст
+	    Разрабатываю системы компьютерного зрения на нейронных сетях для детекции, сегментации и трекинга объектов в режиме реального времени (опыт 3 года). Последние полгода занимаюсь разработкой сервисов с использованием VLM и LLM. Осуществлял полный цикл ML разработки от сбора данных до действующего ML-сервиса с микросервисной архитектурой.
+    
+    Имею опыт научных исследований в Российской академии наук (8 лет). Интересны проекты с LLM и VLM и разработка evaluation frameworks.
+\end{minipage}
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{skills}
+    \vspace{-6pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Алгоритмы и структуры данных, успешно прошел собеседование на белой доске в Яндекс.Дзен (VK).
+
+            \item Цифровая обработка акустических сигналов (спектральный и корреляционный анализ).
+            \item Опыт научной работы (исследований и подготовки научных публикаций в области акустики)
+            \item Английский язык - B1
+            
+        \end{itemize}
+        
+    \cvsect{Научные публикации}
+    {Мои профили в индексируемых базах рецензируемых научных статей (акустика, по ML публикаций нет):}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item E-library ({\href{https://www.elibrary.ru/author_items.asp?authorid=896133}{\textcolor{blue}{ссылка}}})
+            \item Scopus ({\href{https://www.scopus.com/authid/detail.uri?authorId=55948616700}{\textcolor{blue}{ссылка}}})
+            \item Web of science ({\href{https://publons.com/researcher/2189569/anton-shiryaev/}{\textcolor{blue}{ссылка}}})
+            
+        \end{itemize}    
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Tech skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Programming:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Python(venv, conda, poetry, uv), Fast API
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Deep Learning:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      PyTorch, Lightning, Hugging Face Transformers
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{LLM \& Multimodal:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      vLLM, Unsloth, LangChain, LangGraph, Qdrant VLMEvalKit, Arize Phoenix
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+    \textbf{Machine Learning:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      LightAutoML, CatBoost, XGBoost, Optuna, scikit-learn
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+    \textbf{MLOps \& Monitoring:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      MLFlow, Weights \& Biases, TensorBoard, Prefect, ONNX, TensorRT
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+    \textbf{DevOps \& Infrastructure:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Linux, tmux, Git / GitHub / GitLab, Git Submodules, Commitzen, IDE VS code, Docker, NVIDIA Container Toolkit, Docker Compose, uv workspaces
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+    \textbf{Data \& Tools:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      NumPy, SciPy, Pandas, Matplotlib, Seaborn, Streamlit, OpenCV, PIL, kornia, ablumentations, ultralytics, CVAT, Label Studio, Datumaro, FiftyOne, MinIO S3, RabbitMQ
+    \end{minipage}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Опыт работы
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Опыт работы}
+\begin{entrylist}
+	\entry
+        {10.2021 -- Present}
+		{Разработчик систем компьютерного зрения}
+		{АО Кашалот}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+
+            \item Разрабатывал микросервисный сервис с использованием мультимодальной модели Qwen2.5-VL-7B для классификации российских документов и извлечения структурированных данных. Использовал vLLM (serving), RabbitMQ (очереди), MinIO (хранилище) и Arize Phoenix (управление промптами). Реализовал human-in-the-loop: сотрудники корректируют предсказания, данные агрегируются для будущего дообучения. Архитектура предусматривает разделение на контейнеры dev (быстрые эксперименты через uv workspaces и git submodules) и prod (воспроизводимость, фиксированные версии).
+            
+            \item разработал систему компьютерного зрения для телеуправляемого необитаемого подводного аппарата (ТНПА) (платформа nVidia Jetson ARM64) для обнаружения представителей морской фауны в интересах мониторинга марикультуры.
+
+            На ВЭФ 2022 года был представлен наш аппарат, привожу ссылки на материалы ({\href{https://youtu.be/pVVztrvrCGw?si=9IjjOQp7v_v0uVUL}{\textcolor{blue}{демо}}}, {\href{https://primamedia.ru/news/1355123/}{\textcolor{blue}{СМИ}}}, {\href{https://www.1tv.ru/news/2022-09-05/437156-vypusk_novostey_v_14_00_ot_05_09_2022}{\textcolor{blue}{Первый канал}}}).
+
+            \item разработал систему компьютерного зрения для автоматизации конвейерной сортировки рыбоперерабатывающего завода с помощью дельта-робота (платформа AMD64 с Nvidia GPU Linux Ubuntu Server): сегментация, SORT-треккинг, оценка длины рыбы ({\href{https://youtu.be/WCiPduGcIO8?si=vj-Ah93mLjLdZH1t&t=6}{\textcolor{blue}{демо}}}, {\href{https://youtu.be/dGKP4fjohhM}{\textcolor{blue}{демо с роботом}}}).
+        \end{itemize}}
+        
+	\entry
+		{07.2012 -- 02.2022}
+		{Научный сотрудник лаборатории акустической томографии}
+		{ТОИ ДВО РАН }
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item за время работы в институте мной были получены компетенции в области применения Python для задач цифровой обработки акустических сигналов и статистического анализа. Есть опыт подготовки статей в рецензируемые научные журналы и выполнении научных грантов.
+            
+            \item подробнее вы можете прочитать обо мне на {\href{https://www.poi.dvo.ru/index.php/ru/node/1093\#ucastie-v-rossiiskih-i-mez}{\textcolor{blue}{сайте ТОИ ДВО РАН}}}.
+        \end{itemize}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Проекты
+%----------------------------------------------------------------------------------------
+\newpage
+\cvsect{Открытые проекты}
+\begin{entrylist}
+
+    \entry
+    	{Пет проект, Public}
+    	{Lifelong Learning Assistant — Платформа для непрерывного обучения и подготовки к собеседованиям по ML/DL и алгоритмам}
+    	{\href{https://github.com/Lifelong-Learning-Assisttant/lifelong_learning_assistant}{\textcolor{blue}{https://github.com/Lifelong-Learning-Assisttant/lifelong\_learning\_assistant}}}
+    	{%
+        Микросервисная платформа (FastAPI, LangGraph и Docker) для интерактивной подготовки к техническим собеседованиям с LLM-ассистентом. Система включает: LLM-агента с WebSocket-поддержкой (LangGraph), гибридный RAG-поиск, генератор квизов из Markdown, Docker-песочницу для запуска и тестирования кода по алгоритмам на python и React-интерфейс в стиле Cyberpunk.
+        Архитектура использует внешние Docker-сети и сетевые алиасы для надёжной DEV/PROD-сборки. PROD образы публикуются в GitHub Container Registry. Написаны интеграционные тесты для ключевых пользовательских сценариев (Quiz, RAG, Chit-chat), запускаемые внутри контейнеров.
+    
+        Компоненты: гибридный RAG-поиск и генератор квизов из Markdown были реализованы не мной.
+        }
+    
+    \entry
+		{Пет проект, Public}
+		{VLMHyperBench — Open-source фреймворк для оценки возможностей Vision Language Models (VLM) в распознавании русскоязычных документов}
+		{\href{https://github.com/VLMHyperBenchTeam/VLMHyperBench}{\textcolor{blue}{https://github.com/VLMHyperBenchTeam/VLMHyperBench}}}
+		{%Dummy text 
+        Инструмент позволяет сравнивать модели, которые нельзя запустить в одном окружении, в том числе на разных фреймворках инференса, оценивать промпты для разных типов документов и полей, а также легко добавлять свои данные, новые модели и метрики.
+        
+        Проект выиграл грант «Yandex Open Source 2025» в треке «Машинное обучение». Руководил командой магистров 1 курса при разработке проекта.}
+    \entry
+		{Пет проект, Public}
+		{Проект по аудио-визуальному распознаванию эмоций человека для сервисов онлайн видео звонков(Zoom, Skype и д.р.)}
+		{\href{https://gitlab.com/group_19200719}{\textcolor{blue}{https://gitlab.com/group\_19200719}}}
+		{%Dummy text 
+        В рамках проекта я собрал решение, которое использует State of art модель(\href{https://paperswithcode.com/sota/facial-emotion-recognition-on-ravdess}{\textcolor{blue}{papers}}), показывающую лучший результат на датасете RAVDESS(\href{https://zenodo.org/record/1188976\#.YFZuJ0j7SL8}{\textcolor{blue}{dataset}}) на данный момент времени intermediate transformer fusion из статьи "Self-attention fusion for audiovisual emotion recognition with incomplete data"(\href{https://arxiv.org/abs/2201.11095}{\textcolor{blue}{arxiv}}).
+        
+        Благодаря проекту занял 1-вое место в лидерборде(\href{https://ods.ai/tracks/ml-in-production-spring-23/leaderboard}{\textcolor{blue}{лидерборд}}) курса "MLOps и production подход к ML исследованиях 2.0"(\href{https://ods.ai/tracks/ml-in-production-spring-23}{\textcolor{blue}{курс}}) от ГазпромНефть на платформе ODS.}
+	\entry
+		{Пет проект, Public}
+		{CareerRank, сервис для подбора походящих друг другу вакансий и резюме}
+		{\href{https://github.com/medphisiker/maching_cv_and_vacancy}{\textcolor{blue}{https://github.com/medphisiker/maching\_cv\_and\_vacancy}}}
+		{%Dummy text
+        Прототип сервиса для подбора походящих друг другу вакансий и резюме. Используются нейросетевые языковые модели (LM) для подбора подходящих друг другу вакансий и резюме на основе их текстовых описаний. Использовал FAISS для vector search.
+        
+        Демо видео работы данного сервиса (\href{https://youtu.be/ThIdllGH9ug?si=qv5YGrYYDQkxls67&t=34}{\textcolor{blue}{демо}}).}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Образование
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Образование}
+\begin{entrylist}
+    \entry
+		{9.2023 - Present}
+		{Магистратура ИТМО «Искусственный интеллект» AI Talent hub}
+		{ИТМО}
+        {В партнерстве с специалистами «Sber AI Lab», «СеверСталь», «NapoleonIT», «AIRI».}
+    \entry
+		{19.02.2016}
+		{Ученая степень к.ф-м.н по специальности 01.04.06 – акустика.}
+		{ТОИ ДВО РАН}
+		{Решением диссертационного совета ТОИ ДВО РАН от 19.02.2016 г. № 3-2016 присуждена ученая степень к.ф-м.н по специальности 01.04.06 – акустика.}
+	\entry
+		{9.2012 - 6.2015}
+		{Аспирантура по специальности «Акустика»}
+		{ТОИ ДВО РАН}
+		{Принимал участие в выполнении научно-исследовательских контрактов и грантов ({\href{https://www.poi.dvo.ru/index.php/ru/node/1093\#ucastie-v-rossiiskih-i-mez}{\textcolor{blue}{ТОИ ДВО РАН}}})}
+	\entry
+		{9.2007 - 6.2012}
+		{Физик}
+		{ДВФУ}
+		{Присуждена квалификация «Физик» по специальности «Медицинская физика», диплом с отличием}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% Сертификаты и хакатоны
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Соревнования}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Хакатон «Лидеры цифровой трансформации 2023», участвовал в составе команды Baseline Solution, выбрали задачу «Система видеодетекции вооруженных людей»(\href{https://i.moscow/lct/krasnodar\#task\_xakaton}{\textcolor{blue}{задача}}). Стали финалистами хакатона и вошли в топ10 участников (\href{https://disk.yandex.ru/i/YYFpnO94QkIySg}{\textcolor{blue}{финал}}). Мы заняли 4-тое непризовое место (\href{https://disk.yandex.ru/i/_2BYM65WI1v6AA}{\textcolor{blue}{результат}}).
+            
+            \item Хакатон «AI Talent Hackathon 2023», выбрали задачу «Классификация характеристик товара на основе фотографии ценника» (\href{https://adhesive-burst-49c.notion.site/Machine-Learning-in-Retail-f08404b1feec4de482ed5b86650d2497}{\textcolor{blue}{задача}}) 2023 г. Видео с демо решения(\href{https://youtu.be/CmL5e9K3stg?si=nxsyyqU8QiQlT_1C}{\textcolor{blue}{демо}}). Ссылка на репозиторий(\href{https://gitlab.com/pixe1perfect}{\textcolor{blue}{repo}}). Сертификат призера (\href{https://disk.yandex.ru/i/T78Q_4y79jLbHQ}{\textcolor{blue}{сертификат}}).
+            
+            В треке «Machine Learning in Retail» мы вошли в тройку лучших.
+            
+            \item Полный список соревнований/хакатонов/буткемпов доступен по ссылке(\href{https://github.com/medphisiker/resume/blob/main/achievements_log/соревнования.md}{\textcolor{blue}{ссылка}}).
+        \end{itemize}
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Сертификаты и выступления}
+    \vspace{-6pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Грант «Yandex Open Source 2025» с проектом VLMHyperBench (\href{https://habr.com/ru/companies/yandex/articles/909186/}{\textcolor{blue}{Хабр}}).
+            \item Выступление на Data Fest 2025, с проектом VLMHyperBench, секция Open Source (\href{https://ods.ai/tracks/df25-opensource}{\textcolor{blue}{ODS}}, \href{https://vkvideo.ru/video-164555658_456241559?list=ln-DgMne1nJ5c53FiL7AX&ref_domain=ods.ai}{\textcolor{blue}{ВК видео}}).
+            \item Выиграл именные стипендии в конкурсе Selectel Career Wave 2023 и 2024 годов в треке «Разработчики и IT-инженеры» (\href{https://careers.selectel.ru/careerwave_scholarship}{\textcolor{blue}{стипендия}}, \href{https://disk.yandex.ru/i/XSKwshs2MVlZVw}{\textcolor{blue}{2024}}, \href{https://disk.yandex.ru/i/LpyAHpo7WRSwqg}{\textcolor{blue}{2023}}, \href{https://disk.yandex.ru/i/a-nNn9QJxBi3cg}{\textcolor{blue}{сертификат 2024}}, \href{https://disk.yandex.ru/i/7POlr_aPG-aQfA}{\textcolor{blue}{сертификат 2023}}).
+            \item Курс МФТИ «Глубокое обучение в NLP», получено удостоверение гос. образца (\href{https://disk.yandex.ru/i/OkNRk886PcJZ5A}{\textcolor{blue}{ссылка}})
+            \item RuCode 6.0 ФПМИ МФТИ — интенсивы по спортивному программированию, удостоверение гос. образца (\href{https://disk.yandex.ru/i/pvYRu5W3oTeV2A}{\textcolor{blue}{сертификат}}).
+            \item Полный список сертификатов (\href{https://github.com/medphisiker/resume/blob/main/achievements_log/сертификаты.md}{\textcolor{blue}{ссылка}}).
+            \item Полный список выступлений (\href{https://github.com/medphisiker/resume/blob/main/achievements_log/выступления.md}{\textcolor{blue}{ссылка}}).
+        \end{itemize}
+\end{minipage}
+\end{document}
