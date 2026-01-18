@@ -1,0 +1,3 @@
+[submodule "latex_resume_src"]
+	path = latex_resume_src
+	url = git@github.com:medphisiker/latex_resume_src.git
